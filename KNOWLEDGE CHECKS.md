@@ -17,7 +17,7 @@ Course contains several knowledge checks exercises. Below are the questions pres
 4. *What happens when you unregister an extension from the Extension Insights dashboard?*
    - It’s temporarily removed from the backoffice in the specific browser tab.
 
-## Exercise 2:
+## Exercise 2: Setting up an extension with Lit, Vite and TypeScript
 
 1. *Techstack: Drag and drop the descriptions to match the technology.*
    - Lit: A lightweight JavaScript library for building fast, reusable UI components.
@@ -40,3 +40,17 @@ Course contains several knowledge checks exercises. Below are the questions pres
 
 5. *Which of these files is NOT required when using Vite with Lit and TypeScript?*
    - `.gitignore`: Specifies files and directories that Git should ignore (e.g., node_modules, dist).
+
+## Exercise 3: Using Umbraco node modules, contexts and observables with UmbElementMixin
+
+1. *What is a mixin in TypeScript?*
+   - A class that can be used to add functionality to another class.
+
+2. *UmbElementMixin helps you consume a context, provide context, observe a state, use localization and implement controllers. These things can all be done without using UmbElementMixin.*
+   - True.
+
+3. *What does UmbElementMixin provide when extended?*
+   - A collection of methods for consuming APIs, managing state, and providing context.
+
+4. *What does it mean to consume a context and how is this done?*
+   - To use a context token to access and use shared data from an ancestor element.
