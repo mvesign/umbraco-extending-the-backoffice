@@ -5,8 +5,8 @@ Course contains several knowledge checks exercises. Below are the questions pres
 ## Exercise 1: Setting up an extension with vanilla JavaScript
 
 2. *Fill in the missing words*
-   - *To register an extension you need to have an `App_Plugins` folder in the root of your project.*
-   - *An extension is registered in an `umbraco-package.json` file.*
+   - To register an extension you need to have an `App_Plugins` folder in the root of your project.
+   - An extension is registered in an `umbraco-package.json` file.
 
 3. *Which of these fields are mandatory in the umbraco-package.json file for every extension? (select multiple)*
    - `type`
@@ -66,6 +66,6 @@ Course contains several knowledge checks exercises. Below are the questions pres
    - Copy component code and use it directly in your projects.
 
 4. *Fill in the blanks in the description of creating custom icons. These are some of the steps needed to create custom icons:*
-   - *In your umbraco-package.json file, add an extension of the `icons` type.*
-   - *This extension must point to a file containing `an array of icons`, each of which has a name property and a path property that points to a JavaScript file.*
-   - *Each of these JavaScript files must export `an .svg file`.*
+   - In your umbraco-package.json file, add an extension of the `icons` type.
+   - This extension must point to a file containing `an array of icons`, each of which has a name property and a path property that points to a JavaScript file.
+   - Each of these JavaScript files must export `an .svg file`.
