@@ -4,6 +4,12 @@
 		<!-- Disable compression. E.g. for umbraco backoffice files. These files should be precompressed by node and not let dotnet handle it -->
 	</PropertyGroup>
 	<ItemGroup>
+	  <Content Include="App_Plugins\vanilla-extension-section\umbraco-package.json" />
+	  <Content Include="App_Plugins\vanilla-extension-headerapp\umbraco-package.json" />
+	  <Content Include="App_Plugins\vanilla-extension-dashboard\umbraco-package.json" />
+	  <Content Include="App_Plugins\vanilla-extension-workspaceview\umbraco-package.json" />
+	</ItemGroup>
+	<ItemGroup>
 		<PackageReference Include="Umbraco.Cms" />
 		<PackageReference Include="Umbraco.Cms.Web.Website" />
 		<PackageReference Include="uSync" />
@@ -15,6 +21,12 @@
 		<!-- Opt-in to app-local ICU to ensure consistent globalization APIs across different platforms -->
 		<PackageReference Include="Microsoft.ICU.ICU4C.Runtime" />
 		<RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="72.1.0.3" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="App_Plugins\vanilla-extension-section\vanilla-extension-section.js" />
+	  <None Include="App_Plugins\vanilla-extension-headerapp\vanilla-extension-headerapp.js" />
+	  <None Include="App_Plugins\vanilla-extension-dashboard\vanilla-extension-dashboard.js" />
+	  <None Include="App_Plugins\vanilla-extension-workspaceview\vanilla-extension-workspaceview.js" />
 	</ItemGroup>
 	<PropertyGroup>
 		<!-- Razor files are needed for the backoffice to work correctly -->

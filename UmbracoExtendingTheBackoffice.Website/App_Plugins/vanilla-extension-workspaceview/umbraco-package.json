@@ -1,0 +1,25 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Vanilla.Extension.WorkspaceView",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "workspaceView",
+      "alias": "vanilla.extension.workspaceview",
+      "name": "Vanilla Extension WorkspaceView",
+      "element": "/App_Plugins/vanilla-extension-workspaceview/vanilla-extension-workspaceview.js",
+      "weight": 10,
+      "meta": {
+        "label": "Vanilla Extension WorkspaceView",
+        "pathname": "vanilla-extension-workspaceview",
+        "icon": "icon-newspaper"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
+        }
+      ]
+    }
+  ]
+}

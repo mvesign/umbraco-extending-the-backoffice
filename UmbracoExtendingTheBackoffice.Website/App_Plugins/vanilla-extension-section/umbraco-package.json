@@ -1,0 +1,19 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Vanilla.Extension.Section",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "section",
+      "alias": "vanilla.extension.section",
+      "name": "Vanilla Extension Section",
+      "element": "/App_Plugins/vanilla-extension-section/vanilla-extension-section.js",
+      "weight": 10,
+      "meta": {
+        "label": "Vanilla Extension Section",
+        "pathname": "vanilla-extension-section",
+        "icon": "icon-newspaper"
+      }
+    }
+  ]
+}

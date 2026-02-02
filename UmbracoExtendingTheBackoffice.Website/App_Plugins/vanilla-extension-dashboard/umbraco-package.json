@@ -1,0 +1,25 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Vanilla.Extension.Dashboard",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "dashboard",
+      "alias": "vanilla.extension.dashboard",
+      "name": "Vanilla Extension Dashboard",
+      "element": "/App_Plugins/vanilla-extension-dashboard/vanilla-extension-dashboard.js",
+      "weight": 10,
+      "meta": {
+        "label": "Vanilla Extension Dashboard",
+        "pathname": "vanilla-extension-dashboard",
+        "icon": "icon-newspaper"
+      },
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@
     <File Path=".gitignore" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props" />
+    <File Path="KNOWLEDGE CHECKS.md" />
     <File Path="LICENSE" />
     <File Path="nuget.config" />
     <File Path="README.md" />

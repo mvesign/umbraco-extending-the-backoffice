@@ -1,0 +1,19 @@
+{
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "Vanilla.Extension.HeaderApp",
+  "version": "0.1.0",
+  "extensions": [
+    {
+      "type": "headerApp",
+      "alias": "vanilla.extension.headerapp",
+      "name": "Vanilla Extension HeaderApp",
+      "element": "/App_Plugins/vanilla-extension-headerapp/vanilla-extension-headerapp.js",
+      "weight": 10,
+      "meta": {
+        "label": "Vanilla Extension HeaderApp",
+        "pathname": "vanilla-extension-headerapp",
+        "icon": "icon-newspaper"
+      }
+    }
+  ]
+}
