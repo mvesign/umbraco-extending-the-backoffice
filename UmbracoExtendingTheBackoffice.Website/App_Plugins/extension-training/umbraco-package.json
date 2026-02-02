@@ -1,0 +1,23 @@
+{
+    "$schema": "../../umbraco-package-schema.json",
+    "name": "My.Extension", 
+    "extensions": [
+      {
+        "type": "dashboard",
+        "alias": "dashboardTraining",
+        "name": "Dashboard Training",
+        "element": "/App_Plugins/extension-training/dist/dashboard-training.js",
+        "weight": 10,
+        "meta": {
+          "label": "Dashboard Training",
+          "pathname": "dashboard-training"
+        },
+        "conditions": [
+          {
+            "alias": "Umb.Condition.SectionAlias",
+            "match": "Umb.Section.Content"
+          }
+        ]
+      }
+    ]
+  }

@@ -16,3 +16,27 @@ Course contains several knowledge checks exercises. Below are the questions pres
 
 4. *What happens when you unregister an extension from the Extension Insights dashboard?*
    - It’s temporarily removed from the backoffice in the specific browser tab.
+
+## Exercise 2:
+
+1. *Techstack: Drag and drop the descriptions to match the technology.*
+   - Lit: A lightweight JavaScript library for building fast, reusable UI components.
+   - TypeScript: A superset of JavaScript that adds typesafety and a lot of other great features for larger applications.
+   - Vite: A fast build tool that bundles and optimizes code for development and production.
+
+2. *You can install the backoffice node modules with this command: `npm install -D @umbraco-cms/backoffice`. Why is it important to have the node modules in your package?*
+   - They contain the Lit UI components and custom Umbraco backoffice elements needed for building extensions.
+
+3. *Why is it important to use the rollupOptions in the vite configuration file when you have the Umbraco node modules in your extension?*
+   - It prevents bundling the Umbraco node modules with your package since they are already available in the browser via import maps.
+
+4. *What happens when you run the command 'npm run build' in the extension-training folder?*
+   1. The command executes the `build` script defined in the `package.json` file.
+   2. The TypeScript compiler checks the `tsconfig.json` file for information about the compiling process.
+   3. The TypeScript compiler performs type checking.
+   4. The TypeScript compiler transpiles the TS code into JS code and converts TS features into their JS equivalents.
+   5. Vite reads the `vite.config.ts` file that dictates how Vite should behave.
+   6. Vite bundles and optimizes your files and writes them to the specified output directory.
+
+5. *Which of these files is NOT required when using Vite with Lit and TypeScript?*
+   - `.gitignore`: Specifies files and directories that Git should ignore (e.g., node_modules, dist).
