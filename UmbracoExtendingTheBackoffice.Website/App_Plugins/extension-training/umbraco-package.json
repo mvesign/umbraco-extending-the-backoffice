@@ -18,6 +18,12 @@
             "match": "Umb.Section.Content"
           }
         ]
+      },
+      {    
+        "type": "icons",
+        "name": "Dashboard Icons",
+        "alias": "dashboard.icons",
+        "js": "/App_Plugins/extension-training/dist/icons-dictionary.js"
       }
     ]
   }

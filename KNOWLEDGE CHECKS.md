@@ -5,9 +5,9 @@ Course contains several knowledge checks exercises. Below are the questions pres
 ## Exercise 1: Setting up an extension with vanilla JavaScript
 
 2. *Fill in the missing words*
-   *To register an extension you need to have an `[BLANK]` folder in the root of your project. An extension is registered in an `[BLANK]` file.
-   - `App_Plugins`
-   - `umbraco-package.json`
+   *To register an extension you need to have an `[1]` folder in the root of your project. An extension is registered in an `[2]` file.
+   1. `App_Plugins`
+   2. `umbraco-package.json`
 
 3. *Which of these fields are mandatory in the umbraco-package.json file for every extension? (select multiple)*
    - `type`
@@ -54,3 +54,24 @@ Course contains several knowledge checks exercises. Below are the questions pres
 
 4. *What does it mean to consume a context and how is this done?*
    - To use a context token to access and use shared data from an ancestor element.
+
+## Exercise 4: Styling your extension with the Umbraco UI Library and custom icons
+
+1. *UUI components work out-of-the-box in Umbraco 14+, no configuration or setup is required.*
+   - True.
+
+2. *What can you do at uui.umbraco.com? (select multiple)*
+   - View documentation and usage examples of UI components.
+   - Adjust component properties and see real-time changes in the UI and the component code.
+   - Preview UI components.
+   - Copy component code and use it directly in your projects.
+
+3. <DRAG AND DROP EXERCISE>
+
+4. *Fill in the blanks in the description of creating custom icons. These are some of the steps needed to create custom icons:*
+   *In your umbraco-package.json file, add an extension of the `[1]` type.*
+   *This extension must point to a file containing `[2]`, each of which has a name property and a path property that points to a JavaScript file.*
+   *Each of these JavaScript files must export `[3]`.*
+   1. icons
+   2. an array of icons
+   3. an .svg file

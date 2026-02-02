@@ -3,11 +3,10 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     build: {
         lib: {
-            entry: "src/dashboard-training.ts", // your web component source file
-            formats: ["es"],
-			fileName: "dashboard-training"
+            entry: ["src/dashboard-training.ts", "src/icons-dictionary.ts"],
+            formats: ["es"]
         },
-        outDir: "dist", // your web component will be saved in this location
+        outDir: "dist",
         sourcemap: true,
         rollupOptions: {
             external: [/^@umbraco/],
