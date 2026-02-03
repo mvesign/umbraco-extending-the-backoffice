@@ -50,6 +50,14 @@ namespace UmbracoExtendingTheBackoffice.Models.Content
 		// properties
 
 		///<summary>
+		/// Advanced Custom Property
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("advancedCustomProperty")]
+		public virtual global::System.Text.Json.JsonDocument AdvancedCustomProperty => this.Value<global::System.Text.Json.JsonDocument>(_publishedValueFallback, "advancedCustomProperty");
+
+		///<summary>
 		/// Custom Property
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "")]

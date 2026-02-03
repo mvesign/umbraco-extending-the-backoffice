@@ -52,6 +52,24 @@
             ]           
           }
         }
+      },
+      {
+        "type": "propertyEditorUi",
+        "alias": "advancedPropertyEditorTraining",
+        "name": "Advanced Property Editor Training",
+        "element": "/App_Plugins/extension-training/dist/advanced-property-editor-training.js",
+        "meta": {
+          "propertyEditorSchemaAlias": "Umbraco.Plain.Json",
+          "label": "Advanced Property Editor Training",
+          "icon": "icon-smiley",
+          "group": "Custom"
+        }
+      },
+      {
+        "type": "modal",
+        "alias": "customModalTraining",
+        "name": "Custom Modal Training",
+        "element": "/App_Plugins/extension-training/dist/custom-modal-training.js"
       }
     ]
   }

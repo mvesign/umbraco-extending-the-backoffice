@@ -87,3 +87,20 @@ Course contains several knowledge checks exercises. Below are the questions pres
    - Add configuration fields to the `properties` field in the `meta` field in the `umbraco-package.json` file.
    - Create properties in your element and retrieve the configuration data using the method `getValueByAlias` from `UmbPropertyEditorConfigCollection`.
    - Utilize the retrieved data in the component.
+
+## Exercise 6: Building an advanced property editor
+
+1. *Which steps are recommended to use an **Umbraco** modal in the backoffice? (drag and drop the steps)*
+   - Import the necessary elements from the Umbraco modal node module.
+   - Consume the modal manager context in the constructor.
+   - Bind a UI element to a method that opens the modal.
+   - Use the Modal Manager Context to open the modal and do something on submit.
+
+2. *Complex data in the value property of an advanced property editor can be handled by defining a TypeScript type or interface. What are the benefits of handling the data in this way, rather than handling it as a primitive data type (e.g. string)? (select multiple)*
+   - It allows data to be organized in a structured format, making it easy to represent complex relationships between data (e.g. nested content and arrays).
+   - It’s easier to enforce type safety (i.e. ensuring a specific field holds the correct data type) and validate data formats.
+   - It’s easier to access and modify individual elements (e.g. a string could require complex string manipulation to extract data).
+
+3. *The getter method runs whenever the value property is accessed externally (e.g. by Umbraco). The setter method runs whenever the value property is set or updated externally. Check the two statements that are true.*
+   - When the document is saved the getter runs to return the current state of the value property to Umbraco.
+   - When the component is initialized the setter runs to update the component’s internal state with the value from Umbraco.

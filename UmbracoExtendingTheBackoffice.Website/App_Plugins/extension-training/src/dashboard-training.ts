@@ -4,7 +4,8 @@ import { UmbCurrentUserContext, UMB_CURRENT_USER_CONTEXT, type UmbCurrentUserMod
 import { type UmbUserDetailModel, UmbUserCollectionRepository } from '@umbraco-cms/backoffice/user';
 
 @customElement("dashboard-training")
-export class DashboardTraining extends UmbElementMixin(LitElement) {
+export class DashboardTraining
+  extends UmbElementMixin(LitElement) {
 
   private _currentUserContext?: UmbCurrentUserContext;
 
