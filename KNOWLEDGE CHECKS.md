@@ -117,5 +117,10 @@ Course contains several knowledge checks exercises. Below are the questions pres
    - `{yourdomain}/umbraco/swagger`
 
 4. *You can configure Swagger to document your custom API endpoints and use the SwaggerGenOptions class from the Swashbuckle library to customize various aspects of the Swagger output, such as: (select multiple)*
-   - Individual parts of the documentation (parameters, request bodies, operations, schemas)
-   - How the API routes and models are documented
+   - Individual parts of the documentation (parameters, request bodies, operations, schemas).
+   - How the API routes and models are documented.
+
+## Exercise 8: Backoffice authentication token and displaying fetched data
+
+2. *Fill in the missing words*
+   - Using `types` or `interfaces` in TypeScript when handling complex data ensures that the data conforms to a defined structure, improving type safety, code reliability, and making it easier to catch errors during development.
