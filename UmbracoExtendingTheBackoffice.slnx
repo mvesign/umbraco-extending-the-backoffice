@@ -8,6 +8,5 @@
     <File Path="nuget.config" />
     <File Path="README.md" />
   </Folder>
-  <Project Path="UmbracoExtendingTheBackoffice.Models/UmbracoExtendingTheBackoffice.Models.csproj" />
   <Project Path="UmbracoExtendingTheBackoffice.Website/UmbracoExtendingTheBackoffice.Website.csproj" />
 </Solution>

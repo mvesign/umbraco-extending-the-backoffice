@@ -104,3 +104,18 @@ Course contains several knowledge checks exercises. Below are the questions pres
 3. *The getter method runs whenever the value property is accessed externally (e.g. by Umbraco). The setter method runs whenever the value property is set or updated externally. Check the two statements that are true.*
    - When the document is saved the getter runs to return the current state of the value property to Umbraco.
    - When the component is initialized the setter runs to update the component’s internal state with the value from Umbraco.
+
+## Exercise 7: Custom API endpoint and Swagger
+
+1. *You can restrict access to your API to authenticated backoffice users with this controller attribute:*
+   - `[Authorize(Policy = AuthorizationPolicies.BackOfficeAccess)]`
+
+2. *What must be implemented in derived classes of `BackOfficeSecurityRequirementsOperationFilterBase`?*
+   - The `ApiName` property
+
+3. *In version 14 and up, Umbraco includes built-in support for Swagger. You can view the Swagger documentation for your projetc’s API’s at:*
+   - `{yourdomain}/umbraco/swagger`
+
+4. *You can configure Swagger to document your custom API endpoints and use the SwaggerGenOptions class from the Swashbuckle library to customize various aspects of the Swagger output, such as: (select multiple)*
+   - Individual parts of the documentation (parameters, request bodies, operations, schemas)
+   - How the API routes and models are documented
