@@ -69,3 +69,21 @@ Course contains several knowledge checks exercises. Below are the questions pres
    - In your umbraco-package.json file, add an extension of the `icons` type.
    - This extension must point to a file containing `an array of icons`, each of which has a name property and a path property that points to a JavaScript file.
    - Each of these JavaScript files must export `an .svg file`.
+
+## Exercise 5: Building a simple property editor
+
+1. *What is the primary purpose of a property editor?*
+   - To input and manage specific types of data in the backoffice
+
+2. *The `propertyEditorSchemaAlias` determines what can be saved on the property. Which of these is NOT a valid `propertyEditorSchemaAlias`?*
+   - `Umbraco.Plain.Html`
+
+3. *Which of these statements are true? (select multiple)*
+   - Use `@state` when you need to manage internal state that does not need to be accessed outside of the component.
+   - Use `@property` when you want to expose a property that can be set from outside the component.
+   - Both `@state` and `@property` decorators automatically trigger a re-render of the component when their values change, ensuring the UI stays in sync with the underlying data.
+
+4. *How can you add custom configuration to a property editor? (fill in the blanks)*
+   - Add configuration fields to the `properties` field in the `meta` field in the `umbraco-package.json` file.
+   - Create properties in your element and retrieve the configuration data using the method `getValueByAlias` from `UmbPropertyEditorConfigCollection`.
+   - Utilize the retrieved data in the component.

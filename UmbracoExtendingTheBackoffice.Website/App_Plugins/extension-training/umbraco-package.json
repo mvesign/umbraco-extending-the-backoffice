@@ -24,6 +24,34 @@
         "name": "Dashboard Icons",
         "alias": "dashboard.icons",
         "js": "/App_Plugins/extension-training/dist/icons-dictionary.js"
+      },
+      {
+        "type": "propertyEditorUi",
+        "alias": "propertyEditorTraining",
+        "name": "Property Editor Training",
+        "element": "/App_Plugins/extension-training/dist/property-editor-training.js",
+        "meta": {
+          "propertyEditorSchemaAlias": "Umbraco.Plain.String",
+          "label": "Property Editor Training Label",
+          "icon": "icon-notepad",
+          "group": "Custom",
+          "settings": {
+            "properties": [
+              {
+                "alias": "disabled",
+                "label": "Disabled",
+                "description": "Disables the Umbaze button",
+                "propertyEditorUiAlias": "Umb.PropertyEditorUi.Toggle"
+              },
+              {
+                "alias": "placeholder",
+                "label": "Placeholder text",
+                "description": "Placeholder with a description to help out our editor",
+                "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+              }
+            ]           
+          }
+        }
       }
     ]
   }

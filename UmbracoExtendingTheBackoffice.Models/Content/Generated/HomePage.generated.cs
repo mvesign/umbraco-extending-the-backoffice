@@ -48,5 +48,13 @@ namespace UmbracoExtendingTheBackoffice.Models.Content
 		}
 
 		// properties
+
+		///<summary>
+		/// Custom Property
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("customProperty")]
+		public virtual string CustomProperty => this.Value<string>(_publishedValueFallback, "customProperty");
 	}
 }
