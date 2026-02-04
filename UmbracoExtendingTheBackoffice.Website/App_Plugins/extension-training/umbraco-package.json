@@ -1,95 +1,95 @@
 {
-    "$schema": "../../umbraco-package-schema.json",
-    "name": "My.Extension", 
-    "extensions": [
-      {
-        "type": "dashboard",
-        "alias": "dashboardTraining",
-        "name": "Dashboard Training",
-        "element": "/App_Plugins/extension-training/dist/dashboard-training.js",
-        "weight": 10,
-        "meta": {
-          "label": "Dashboard Training",
-          "pathname": "dashboard-training"
-        },
-        "conditions": [
-          {
-            "alias": "Umb.Condition.SectionAlias",
-            "match": "Umb.Section.Content"
-          }
-        ]
+  "$schema": "../../umbraco-package-schema.json",
+  "name": "My.Extension", 
+  "extensions": [
+    {
+      "type": "dashboard",
+      "alias": "dashboardTraining",
+      "name": "Dashboard Training",
+      "element": "/App_Plugins/extension-training/dist/dashboard-training.js",
+      "weight": 10,
+      "meta": {
+        "label": "Dashboard Training",
+        "pathname": "dashboard-training"
       },
-      {    
-        "type": "icons",
-        "name": "Dashboard Icons",
-        "alias": "dashboard.icons",
-        "js": "/App_Plugins/extension-training/dist/icons-dictionary.js"
-      },
-      {
-        "type": "propertyEditorUi",
-        "alias": "propertyEditorTraining",
-        "name": "Property Editor Training",
-        "element": "/App_Plugins/extension-training/dist/property-editor-training.js",
-        "meta": {
-          "propertyEditorSchemaAlias": "Umbraco.Plain.String",
-          "label": "Property Editor Training Label",
-          "icon": "icon-notepad",
-          "group": "Custom",
-          "settings": {
-            "properties": [
-              {
-                "alias": "disabled",
-                "label": "Disabled",
-                "description": "Disables the Umbaze button",
-                "propertyEditorUiAlias": "Umb.PropertyEditorUi.Toggle"
-              },
-              {
-                "alias": "placeholder",
-                "label": "Placeholder text",
-                "description": "Placeholder with a description to help out our editor",
-                "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
-              }
-            ]           
-          }
+      "conditions": [
+        {
+          "alias": "Umb.Condition.SectionAlias",
+          "match": "Umb.Section.Content"
         }
-      },
-      {
-        "type": "propertyEditorUi",
-        "alias": "advancedPropertyEditorTraining",
-        "name": "Advanced Property Editor Training",
-        "element": "/App_Plugins/extension-training/dist/advanced-property-editor-training.js",
-        "meta": {
-          "propertyEditorSchemaAlias": "Umbraco.Plain.Json",
-          "label": "Advanced Property Editor Training",
-          "icon": "icon-smiley",
-          "group": "Custom"
+      ]
+    },
+    {    
+      "type": "icons",
+      "name": "Dashboard Icons",
+      "alias": "dashboard.icons",
+      "js": "/App_Plugins/extension-training/dist/icons-dictionary.js"
+    },
+    {
+      "type": "propertyEditorUi",
+      "alias": "propertyEditorTraining",
+      "name": "Property Editor Training",
+      "element": "/App_Plugins/extension-training/dist/property-editor-training.js",
+      "meta": {
+        "propertyEditorSchemaAlias": "Umbraco.Plain.String",
+        "label": "Property Editor Training Label",
+        "icon": "icon-notepad",
+        "group": "Custom",
+        "settings": {
+          "properties": [
+            {
+              "alias": "disabled",
+              "label": "Disabled",
+              "description": "Disables the Umbaze button",
+              "propertyEditorUiAlias": "Umb.PropertyEditorUi.Toggle"
+            },
+            {
+              "alias": "placeholder",
+              "label": "Placeholder text",
+              "description": "Placeholder with a description to help out our editor",
+              "propertyEditorUiAlias": "Umb.PropertyEditorUi.TextBox"
+            }
+          ]           
         }
+      }
+    },
+    {
+      "type": "propertyEditorUi",
+      "alias": "advancedPropertyEditorTraining",
+      "name": "Advanced Property Editor Training",
+      "element": "/App_Plugins/extension-training/dist/advanced-property-editor-training.js",
+      "meta": {
+        "propertyEditorSchemaAlias": "Umbraco.Plain.Json",
+        "label": "Advanced Property Editor Training",
+        "icon": "icon-smiley",
+        "group": "Custom"
+      }
+    },
+    {
+      "type": "modal",
+      "alias": "customModalTraining",
+      "name": "Custom Modal Training",
+      "element": "/App_Plugins/extension-training/dist/custom-modal-training.js"
+    },
+    {
+      "type": "workspaceView",
+      "alias": "workspaceViewTraining",
+      "name": "Workspace View Training",
+      "element": "/App_Plugins/extension-training/dist/workspace-view-training.js",
+      "weight": 100,
+      "meta": {
+        "label": "Analysis",
+        "pathname": "analysis",
+        "icon": "icon-lab"
       },
-      {
-        "type": "modal",
-        "alias": "customModalTraining",
-        "name": "Custom Modal Training",
-        "element": "/App_Plugins/extension-training/dist/custom-modal-training.js"
-      },
-      {
-        "type": "workspaceView",
-        "alias": "workspaceViewTraining",
-        "name": "Workspace View Training",
-        "element": "/App_Plugins/extension-training/dist/workspace-view-training.js",
-        "weight": 100,
-        "meta": {
-          "label": "Analysis",
-          "pathname": "analysis",
-          "icon": "icon-lab"
-        },
-        "conditions": [
-          {
-            "alias": "Umb.Condition.WorkspaceContentTypeAlias",
-            "match": "textPage"
-          }
-        ]
-      },
-      {
+      "conditions": [
+        {
+          "alias": "Umb.Condition.WorkspaceContentTypeAlias",
+          "match": "textPage"
+        }
+      ]
+    },
+    {
       "type": "localization",
       "alias": "CustomPackage.Localize.EnUS",
       "name": "English (United States)",
@@ -106,6 +106,12 @@
         "culture": "nl"
       },
       "js": "/App_Plugins/extension-training/localization/nl.js"
+    },
+    {
+      "type": "backofficeEntryPoint",
+      "alias": "excludeGettingStartedDashboard",
+      "name": "Exclude Getting Started Dashboard",
+      "js": "/App_Plugins/extension-training/exclude-getting-started-dashboard.js"
     }
-    ]
-  }
+  ]
+}
