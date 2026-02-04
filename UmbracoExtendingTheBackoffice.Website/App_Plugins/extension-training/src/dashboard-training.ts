@@ -49,6 +49,8 @@ export class DashboardTraining
 
     if (this._isReady) {
       return html`
+        <h1><umb-localize key="dashboardLocalization_heading"></umb-localize></h1>
+        <h2><umb-localize key="dashboardLocalization_bodytext"></umb-localize></h2>
         <uui-box headline="Welcome, ${this._currentUser?.name ?? 'Unknown'}!">
           <uui-table id="users-wrapper">
             <uui-table-row>
