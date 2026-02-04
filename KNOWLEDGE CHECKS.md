@@ -124,3 +124,16 @@ Course contains several knowledge checks exercises. Below are the questions pres
 
 2. *Fill in the missing words*
    - Using `types` or `interfaces` in TypeScript when handling complex data ensures that the data conforms to a defined structure, improving type safety, code reliability, and making it easier to catch errors during development.
+
+## Exercise 9: Workspace View with Umbraco data
+
+1. *What can Workspace Views be used for? (select multiple)*
+   - Handling complex data that is not fully supported by Umbraco's default editors
+   - Creating a customized preview feature
+   - Performing data analytics on the content being edited
+   - Displaying data visualization
+
+3. *Which of these conditions come with Umbraco out-of-the-box? Mark the conditions.*
+   - Umb.Condition.SectionAlias
+   - Umb.Condition.WorkspaceAlias
+   - Umb.Condition.WorkspaceContentTypeAlias

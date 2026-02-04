@@ -70,6 +70,24 @@
         "alias": "customModalTraining",
         "name": "Custom Modal Training",
         "element": "/App_Plugins/extension-training/dist/custom-modal-training.js"
+      },
+      {
+        "type": "workspaceView",
+        "alias": "workspaceViewTraining",
+        "name": "Workspace View Training",
+        "element": "/App_Plugins/extension-training/dist/workspace-view-training.js",
+        "weight": 100,
+        "meta": {
+          "label": "Analysis",
+          "pathname": "analysis",
+          "icon": "icon-lab"
+        },
+        "conditions": [
+          {
+            "alias": "Umb.Condition.WorkspaceContentTypeAlias",
+            "match": "textPage"
+          }
+        ]
       }
     ]
   }

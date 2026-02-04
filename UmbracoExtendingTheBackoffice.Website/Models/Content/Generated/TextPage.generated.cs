@@ -48,5 +48,21 @@ namespace UmbracoExtendingTheBackoffice.Models.Content
 		}
 
 		// properties
+
+		///<summary>
+		/// Body Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("bodyText")]
+		public virtual string BodyText => this.Value<string>(_publishedValueFallback, "bodyText");
+
+		///<summary>
+		/// Complex Data
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("complexData")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ComplexData => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "complexData");
 	}
 }
