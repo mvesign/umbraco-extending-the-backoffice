@@ -111,7 +111,7 @@
       "type": "backofficeEntryPoint",
       "alias": "excludeGettingStartedDashboard",
       "name": "Exclude Getting Started Dashboard",
-      "js": "/App_Plugins/extension-training/exclude-getting-started-dashboard.js"
+      "js": "/App_Plugins/extension-training/entryPoints/exclude-getting-started-dashboard.js"
     }
   ]
 }
